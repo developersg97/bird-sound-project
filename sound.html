@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrumet Sound</title>
+</head>
+<body>
+
+    <style>
+        section{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .button{
+            border: 10px solid greenyellow;
+            border-radius: 10px;
+        }
+        .button1{
+            background-image: url(/bird/eagal.jpg);
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+            color: rgba(255, 255, 255, 0);
+        }
+        .button2{
+            background-image: url(/bird/kingfisher.jfif);
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+            color: rgba(255, 255, 255, 0);
+        }
+        .button3{
+            background-image: url(/bird/macow.jpg);
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+            color: rgba(255, 255, 255, 0);
+        }
+        .button4{
+            background-image: url(/bird/myna.jfif);
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+            color: rgba(255, 255, 255, 0);
+        }
+        .button5{
+            background-image: url(/bird/parrot.jpg);
+            height: 200px;
+            width: 300px;
+            background-size: cover;
+            color: rgba(255, 255, 255, 0);
+        }
+    </style>
+
+    <section>
+
+<button class="button button1">a</button>
+<button class="button button2">b</button>
+<button class="button button3">c</button>
+<button class="button button4">d</button>
+<button class="button button5">e</button>
+
+</section>
+
+
+
+<script>
+    for( x=0; x<6 ; x++){
+        document.querySelectorAll("."+"button")[x].addEventListener( "click",function(){
+
+            var text = this.innerHTML;
+           
+
+            switch(text){
+                case "a":
+                var audio = new Audio("sound/eagle.mp3");
+            audio.play();
+            break;
+
+            case "b":
+                var audio = new Audio("sound/kingfish.mp3");
+            audio.play();
+            break;
+
+            case "c":
+                var audio = new Audio("sound/macaw.mp3");
+            audio.play();
+            break;
+
+            case "d":
+                var audio = new Audio("sound/myna.mp3");
+            audio.play();
+            break;
+
+            case "e":
+                var audio = new Audio("sound/parrot.mp3");
+            audio.play();
+            break;
+            }
+
+
+        })
+    }
+
+</script>
+       
+
+
+
+    
+</body>
+</html>
